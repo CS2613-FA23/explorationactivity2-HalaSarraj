@@ -124,9 +124,9 @@ yargs.parse();
 	```bash
 	$ node app.js calculate --operation add --numbers 3 5 7
 	Result of add: 15
-	```
+	``
 
-#### B. ** Option Customization**
+#### B. **Option Customization**
 - The library allows the configuration of various options such as setting default values, specifying whether an option is required, and defining custom validation rules.
 **Code Snippet to showcase this:**
 ```javascript
@@ -195,7 +195,7 @@ yargs.command({
 });
 
 yargs.parse();
-    ```
+```
 
 **Output:**
 
