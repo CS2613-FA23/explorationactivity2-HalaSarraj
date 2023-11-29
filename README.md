@@ -61,11 +61,11 @@ Here is a sample run of the program where the user inputs all their tasks, marks
 
 1. **Initial JSON file, with no tasks.**: It will first be loaded with an empty array. ![Empty JSON file](cleared_tasks.png)
 
-2. **Adding Tasks & printing them out**: Here the user adds 4 tasks, then prints them out. ![Add tasks](add tasks & print.png)
+2. **Adding Tasks & printing them out**: Here the user adds 4 tasks, then prints them out. ![Add tasks](add_tasks_print.png)
 
 3. **Marking complete**: The user finished 2 of his tasks, marked them as complete, then printed out all of his tasks again. ![Cross off tasks](mark_complete.png)
 
 4. **Finish all tasks**: Once the user marks the last remaining task as complete, the program prints out an encouraging message. The user then decides to print out all of his tasks ![Complete all tasks](finishAllTasks.png)
 
-5. **JSON File Update**: The JSON file gets updated every time the user interacts with the program using the arguments. ![JSON file with tasks](half_complete tasks.png)
+5. **JSON File Update**: The JSON file gets updated every time the user interacts with the program using the arguments. ![JSON file with tasks](half_complete_tasks.png)
 
