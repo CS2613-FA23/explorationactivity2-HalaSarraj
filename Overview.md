@@ -54,7 +54,8 @@
     yargs.parse();
     ```
 
-3. ** Advanced Features in the Yargs library **
+3. ** Advanced Features in the Yargs library:**
+
 **A. Multiple names for the commands**
 
 ```javascript
@@ -68,7 +69,7 @@ yargs.command({
 ```
 In this example, both greet and hello can be used interchangeably
 
-**B. Default Values for Options**
+**B. Default Values for Options:**
 In the same example , adding:
 
 
@@ -83,6 +84,152 @@ In the same example , add:
 validate: (value) => value.length > 3,
 ```
 after the type: 'string'. The username must be at least 4 characters long as per the custom validation function.
+
+
+### **_Question 3:_ What are the functionalities of the package/library?**
+
+#### A. **Command-Line Parsing**
+-Yargs simplifies the process of parsing command-line arguments and options.
+**Code Snippet for adding numbers in an array from the command line:**
+
+```javascript
+yargs.command({
+  command: 'calculate',
+  describe: 'Perform arithmetic calculations',
+  builder: {
+    operation: {
+      describe: 'Mathematical operation',
+      demandOption: true,
+      type: 'string',
+    },
+    numbers: {
+      describe: 'List of numbers',
+      demandOption: true,
+      type: 'array',
+    },
+  },
+  handler: function (argv) {
+    const { operation, numbers } = argv;
+    const result = performCalculation(operation, numbers);
+    console.log(`Result of ${operation}: ${result}`);
+  },
+});
+
+yargs.parse();
+```
+**Output:**
+
+    ```bash
+$ node app.js calculate --operation add --numbers 3 5 7
+Result of add: 15
+    ```
+
+#### B. ** Option Customization**
+- The library allows the configuration of various options such as setting default values, specifying whether an option is required, and defining custom validation rules.
+**Code Snippet to showcase this:**
+```javascript
+yargs.option('username', {
+  describe: 'User username',
+  demandOption: true,
+  type: 'string',
+  default: 'Guest',
+  validate: (value) => value.length > 3,
+});
+yargs.parse();
+```
+
+#### C. **Commands and Subcommands**
+
+Yargs supports the creation of commands and subcommands, making the organization of the functions into a hierarchical structure.
+
+**Example:**
+
+```javascript
+// main commane here:
+yargs.command({
+  command: 'file',
+  describe: 'Manage files',
+  builder: {
+// sub command 1
+    create: {
+      command: 'create',
+      describe: 'Create a new file',
+      builder: {
+        name: {
+          describe: 'Name of the file',
+          demandOption: true,
+          type: 'string',
+        },
+        content: {
+          describe: 'Content of the file',
+          demandOption: false,
+          type: 'string',
+        },
+      },
+      handler: function (argv) {
+        const { name, content } = argv;
+        createFile(name, content);
+        console.log(`File '${name}' created successfully.`);
+      },
+    },
+// sub command 2
+    delete: {
+      command: 'delete',
+      describe: 'Delete an existing file',
+      builder: {
+        name: {
+          describe: 'Name of the file to delete',
+          demandOption: true,
+          type: 'string',
+        },
+      },
+      handler: function (argv) {
+        const { name } = argv;
+        deleteFile(name);
+        console.log(`File '${name}' deleted successfully.`);
+      },
+    },
+  },
+});
+
+yargs.parse();
+    ```
+
+**Output:**
+
+    ```bash
+$ node app.js file create --name test.txt --content "Contents of file."
+File 'test.txt' created successfully.
+
+$ node app.js file delete --name test.txt
+File 'test.txt' deleted successfully.
+    ```
+
+#### D. **Providing Choices for Options**
+
+Yargs allows you to restrict the possible values an option can take using the `.choices(key, choices)` method. This ensures that the user can only select from a predefined set of values for a specific option.
+
+**Example:**
+
+```javascript
+yargs.option('color', {
+  describe: 'Select a color',
+  demandOption: true,
+  type: 'string',
+  choices: ['red', 'green', 'blue'],
+});
+yargs.parse();
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
