@@ -15,6 +15,7 @@
     ```
 
 2. ** Define commands, options, and arguments using Yargs' syntax.** 
+
 - _Define Commands:_ For a program that would ask for a String for the user's name (required) then a number for the age (optional), the syntax of defining the command would be:
  ```javascript
     yargs.command({
@@ -32,8 +33,8 @@
           type: 'number',
         },
       },
-
-3. **Handle Commands:** Implement the logic for handling each command inside the corresponding `handler` function.
+    ```
+3. _Handle Commands:_ Implement the logic for handling each command inside the corresponding `handler` function.
  ```javascript
 handler: function (argv) {
     const greeting = `Hello, ${argv.name}!`;
@@ -42,7 +43,9 @@ handler: function (argv) {
     // Add extra code here if you want to do more with this information
   },
 });
+    ```
 
-4.**Parse the arguments** 
+4._Parse the arguments:_ 
  ```javascript
 yargs.parse();
+    ```
