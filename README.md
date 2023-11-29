@@ -16,7 +16,7 @@ The sample program showcases the usage of the Yargs [^1^] library in Node.js. Ya
     ```bash
     node todo.js
 
-6.Follow the on-screen instructions to interact with the to-do list manager. For Example:
+6.Follow the on-screen instructions to interact with the to-do list manager. For Example: 
     ```bash
     node todo.js add --task "Do 2613 PQ"
 
