@@ -37,7 +37,7 @@
     });
     ```
 
-3. _Handle Commands:_ Implement the logic for handling each command inside the corresponding `handler` function.
+ - _Handle Commands:_ Implement the logic for handling each command inside the corresponding `handler` function.
 
     ```javascript
     handler: function (argv) {
@@ -48,13 +48,11 @@
     },
     ```
 
-4. _Parse the arguments:_ 
+ -_Parse the arguments:_ 
 
     ```javascript
     yargs.parse();
     ```
-
-
 
 3. ** Advanced Features in the Yargs library:**
 
