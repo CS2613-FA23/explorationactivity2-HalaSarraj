@@ -121,7 +121,7 @@ yargs.parse();
 ```
 **Output:**
 
-    ```bash
+    ``` bash
 	$ node app.js calculate --operation add --numbers 3 5 7
 	Result of add: 15
     ```
@@ -199,7 +199,7 @@ yargs.parse();
 
 **Output:**
 
-    ```bash
+    ``` bash
 	$ node app.js file create --name test.txt --content "Contents of file."
 	File 'test.txt' created successfully.
 
