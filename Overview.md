@@ -16,7 +16,7 @@
 
 2. **Define commands, options, and arguments using Yargs' syntax.** 
 
-    - _Define Commands:_ For a program that would ask for a String for the user's name (required) then a number for the age (optional), the syntax of defining the command would be:
+	- _Define Commands:_ For a program that would ask for a String for the user's name (required) then a number for the age (optional), the syntax of defining the command would be:
 
     ```javascript
     yargs.command({
@@ -37,7 +37,7 @@
     });
     ```
 
- - _Handle Commands:_ Implement the logic for handling each command inside the corresponding `handler` function.
+	- _Handle Commands:_ Implement the logic for handling each command inside the corresponding `handler` function.
 
     ```javascript
     handler: function (argv) {
@@ -48,15 +48,16 @@
     },
     ```
 
- -_Parse the arguments:_ 
+ 	- _Parse the arguments:_ 
 
     ```javascript
     yargs.parse();
     ```
 
-3. ** Advanced Features in the Yargs library:**
 
--**A. Multiple names for the commands**
+3.** Advanced Features in the Yargs library:**
+
+	-_A. Multiple names for the commands_
 
 ```javascript
 yargs.command({
@@ -69,7 +70,7 @@ yargs.command({
 ```
 In this example, both greet and hello can be used interchangeably
 
--**B. Default Values for Options:**
+	-_B. Default Values for Options:_
 In the same example , adding:
 
 
@@ -78,7 +79,7 @@ default: 'Guest',
 ```
 after the type: 'string'; will make the value of name default to 'Guest' unless the user gives another name.
 
--**C. Adding requirements for args/ validation**
+	-_C. Adding requirements for args/ validation:_
 In the same example , add:
 ```javascript
 validate: (value) => value.length > 3,
@@ -86,7 +87,7 @@ validate: (value) => value.length > 3,
 after the type: 'string'. The username must be at least 4 characters long as per the custom validation function.
 
 
-### **_Question 3:_ What are the functionalities of the package/library?**
+## **_Question 3:_ What are the functionalities of the package/library?**
 
 #### A. **Command-Line Parsing**
 -Yargs simplifies the process of parsing command-line arguments and options.
