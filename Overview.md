@@ -55,9 +55,9 @@
     ```
 
 
-3.** Advanced Features in the Yargs library:**
+3.**Advanced Features in the Yargs library:**
 
-	-_A. Multiple names for the commands_
+	- _A. Multiple names for the commands_
 
 ```javascript
 yargs.command({
@@ -70,7 +70,7 @@ yargs.command({
 ```
 In this example, both greet and hello can be used interchangeably
 
-	-_B. Default Values for Options:_
+	- _B. Default Values for Options:_
 In the same example , adding:
 
 
@@ -79,7 +79,7 @@ default: 'Guest',
 ```
 after the type: 'string'; will make the value of name default to 'Guest' unless the user gives another name.
 
-	-_C. Adding requirements for args/ validation:_
+	- _C. Adding requirements for args/ validation:_
 In the same example , add:
 ```javascript
 validate: (value) => value.length > 3,
@@ -224,13 +224,13 @@ yargs.parse();
 ```
 
 ## **_Question 4:_ When was it created?**
--The library was first published on July 11, 2012, and has undergone several updates and improvements over the years. The most recent update was on April 27 ,2023
+- The library was first published on July 11, 2012, and has undergone several updates and improvements over the years. The most recent update was on April 27 ,2023
 
 ## **_Question 5:_ Why did you select this package/library**
--I selected Yargs because of its efficiency in handling command-line interfaces (CLIs) in Node.js. While I was working on a recent project for a different course, the requirement involved extensive work with the CLI, parsing user-input, and managing command-line arguments. Manual handling of these tasks proved to be time-consuming and prone to errors. During my search for a more efficient solution, I discovered Yargs, and I realized that it could significantly simplify the process of working with command-line inputs.
+- I selected Yargs because of its efficiency in handling command-line interfaces (CLIs) in Node.js. While I was working on a recent project for a different course, the requirement involved extensive work with the CLI, parsing user-input, and managing command-line arguments. Manual handling of these tasks proved to be time-consuming and prone to errors. During my search for a more efficient solution, I discovered Yargs, and I realized that it could significantly simplify the process of working with command-line inputs.
 
 ## **_Question 6:_ How did learning the package/library influence your learning of the language**
--Learning Yargs and implementing the to-do list functionality has significantly improved my understanding of JavaScript. Through this experience, I gained practice using JSON handling. Additionally, working with Yargs deepened my understanding of file operations, specifically reading and writing to files, and reinforced my skills in array manipulation. The to-do list implementation served as a practical application of the essential js and node.js features.
+- Learning Yargs and implementing the to-do list functionality has significantly improved my understanding of JavaScript. Through this experience, I gained practice using JSON handling. Additionally, working with Yargs deepened my understanding of file operations, specifically reading and writing to files, and reinforced my skills in array manipulation. The to-do list implementation served as a practical application of the essential js and node.js features.
 
 ## **_Question 7:_ How was your overall experience with the package/library?**
 - _When would you recommend this package/library to someone?_: I would recommend this package to anyone working on Node.js projects that involve building command-line interfaces. Yargs helps by simplifying the process of handling command-line arguments, providing an organized and efficient way to define commands, options, and arguments. Its features like option customization and command organization makes it a good choice for developers looking for a user-friendly and powerful CLI framework.
