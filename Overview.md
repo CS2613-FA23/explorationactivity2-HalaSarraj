@@ -121,10 +121,10 @@ yargs.parse();
 ```
 **Output:**
 
-	```bash
+    ```bash
 	$ node app.js calculate --operation add --numbers 3 5 7
 	Result of add: 15
-	``
+    ```
 
 #### B. **Option Customization**
 - The library allows the configuration of various options such as setting default values, specifying whether an option is required, and defining custom validation rules.
@@ -206,6 +206,7 @@ yargs.parse();
 	$ node app.js file delete --name test.txt
 	File 'test.txt' deleted successfully.
     ```
+
 
 #### D. **Providing Choices for Options**
 
