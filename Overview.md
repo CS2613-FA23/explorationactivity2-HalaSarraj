@@ -200,11 +200,11 @@ yargs.parse();
 **Output:**
 
     ```bash
-$ node app.js file create --name test.txt --content "Contents of file."
-File 'test.txt' created successfully.
+	$ node app.js file create --name test.txt --content "Contents of file."
+	File 'test.txt' created successfully.
 
-$ node app.js file delete --name test.txt
-File 'test.txt' deleted successfully.
+	$ node app.js file delete --name test.txt
+	File 'test.txt' deleted successfully.
     ```
 
 #### D. **Providing Choices for Options**
