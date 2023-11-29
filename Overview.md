@@ -14,7 +14,7 @@
     const yargs = require('yargs');
     ```
 
-2. ** Define commands, options, and arguments using Yargs' syntax.** 
+2. **Define commands, options, and arguments using Yargs' syntax.** 
 
     - _Define Commands:_ For a program that would ask for a String for the user's name (required) then a number for the age (optional), the syntax of defining the command would be:
 
@@ -53,3 +53,37 @@
     ```javascript
     yargs.parse();
     ```
+
+3. ** Advanced Features in the Yargs library **
+**A. Multiple names for the commands**
+
+```javascript
+yargs.command({
+  command: ['greet', 'hello'],
+  describe: 'Greet a user',
+  handler: function (argv) {
+    console.log(`Hello, ${argv.name}!`);
+  },
+});
+```
+In this example, both greet and hello can be used interchangeably
+
+**B. Default Values for Options**
+In the same example , adding:
+
+
+```javascript
+default: 'Guest',
+```
+after the type: 'string'; will make the value of name default to 'Guest' unless the user gives another name.
+
+**C. Adding requirements for args/ validation**
+In the same example , add:
+```javascript
+validate: (value) => value.length > 3,
+```
+after the type: 'string'. The username must be at least 4 characters long as per the custom validation function.
+
+
+
+
