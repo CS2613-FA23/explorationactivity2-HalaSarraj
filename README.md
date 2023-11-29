@@ -41,8 +41,6 @@ The sample program showcases the usage of the Yargs [^1^] library in Node.js. Ya
         node todo.js print
         ```
 
-Feel free to adjust the wording or formatting to better suit your preferences. This should render correctly on GitHub, providing clear instructions for users to run and interact with your To-Do List Manager.
-
 
 
 ## 3. Program Purpose
