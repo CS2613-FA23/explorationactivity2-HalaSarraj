@@ -15,19 +15,19 @@ The sample program showcases the usage of the Yargs [^1^] library in Node.js. Ya
 5. Run the program by executing the following command:
     ```bash
     node todo.js
-    ``
+
 6.Follow the on-screen instructions to interact with the to-do list manager. For Example:
     ```bash
     node todo.js add --task "Do 2613 PQ"
-    ``
+
 or:
     ```bash
     node todo.js completed --index 1
-    ``
+
 to print out all tasks:
     ```bash
     node todo.js print
-    ``
+
 
 ## 3. Program Purpose
 The To-Do List Manager serves as a simple command-line tool to help users manage their to-do lists. It provides basic functionalities such as adding tasks, marking tasks as completed, printing the current tasks, clearing all tasks, and exiting the program.
