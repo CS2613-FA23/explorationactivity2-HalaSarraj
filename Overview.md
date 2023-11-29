@@ -57,7 +57,7 @@
 
 3.**Advanced Features in the Yargs library:**
 
-	- _A. Multiple names for the commands_
+- _A. Multiple names for the commands_
 
 ```javascript
 yargs.command({
@@ -70,7 +70,7 @@ yargs.command({
 ```
 In this example, both greet and hello can be used interchangeably
 
-	- _B. Default Values for Options:_
+- _B. Default Values for Options:_
 In the same example , adding:
 
 
@@ -79,7 +79,7 @@ default: 'Guest',
 ```
 after the type: 'string'; will make the value of name default to 'Guest' unless the user gives another name.
 
-	- _C. Adding requirements for args/ validation:_
+- _C. Adding requirements for args/ validation:_
 In the same example , add:
 ```javascript
 validate: (value) => value.length > 3,
