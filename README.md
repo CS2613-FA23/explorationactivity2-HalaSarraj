@@ -5,28 +5,44 @@ The sample program showcases the usage of the Yargs [^1^] library in Node.js. Ya
 [^1^]: Yargs Website, http://yargs.js.org/
 
 ## 2. How to Run
-1. Make sure you have Node.js installed on your machine
+
+1. Make sure you have Node.js installed on your machine.
 2. Clone or download this repository to your local machine.
 3. Navigate to the repository folder using the command line or terminal.
 4. Run the following command to install the library:
+
     ```bash
     npm install yargs
+    ```
 
 5. Run the program by executing the following command:
+
     ```bash
     node todo.js
+    ```
 
-6.Follow the on-screen instructions to interact with the to-do list manager. For Example: 
-    ```bash
-    node todo.js add --task "Do PQ for CS2613"
+6. Follow the on-screen instructions to interact with the to-do list manager. For example:
 
-or:
-    ```bash
-    node todo.js completed --index 1
+    - To add a task:
 
-to print out all tasks:
-    ```bash
-    node todo.js print
+        ```bash
+        node todo.js add --task "Do PQ for CS2613"
+        ```
+
+    - To mark a task as completed:
+
+        ```bash
+        node todo.js completed --index 1
+        ```
+
+    - To print out all tasks:
+
+        ```bash
+        node todo.js print
+        ```
+
+Feel free to adjust the wording or formatting to better suit your preferences. This should render correctly on GitHub, providing clear instructions for users to run and interact with your To-Do List Manager.
+
 
 
 ## 3. Program Purpose
