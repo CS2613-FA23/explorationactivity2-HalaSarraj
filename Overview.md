@@ -199,7 +199,7 @@ yargs.parse();
 
 **Output:**
 
- ```bash
+```bash
 $ node app.js file create --name test.txt --content "Contents of file."
 File 'test.txt' created successfully.
 
