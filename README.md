@@ -49,11 +49,11 @@ The To-Do List Manager serves as a simple command-line tool to help users manage
 ## 4. Sample Input/Output
 ## Sample Input:
 The primary input for the to-do list manager is through interactions in the CLI. The following are all of the examples of the commands that the to-do list manager accepts:
--Adding tasks: node todo.js add --task "task description here".
--Mark task as complete: node todo.js completed --index n, where n is a number. Index starts from 1 to improve user-friendliness
--Print all tasks: node todo.js print
--Clear all tasks: node todo.js clear
--Exit (without completing all tasks): node todo.js exit
+- Adding tasks: node todo.js add --task "task description here".
+- Mark task as complete: node todo.js completed --index n, where n is a number. Index starts from 1 to improve user-friendliness
+- Print all tasks: node todo.js print
+- Clear all tasks: node todo.js clear
+- Exit (without completing all tasks): node todo.js exit
 
 The program uses JSON to store the tasks in a separate file and adds tasks or clears the file. This is done so that the program saves the tasks and doesn't lose the information every time the program is run again.
 ### Sample Output:
